@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+*{
+    font-family: 'Play', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: hsl(240, 33%, 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.hero-second{
+    background: hsl(0,0%,85%);
+}
+.hero-third{
+    background: hsl(270, 86%, 9%);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    color: #acacac;
+}
+.header-second{
+    color: #000;
+}
+.header-third{
+    color: hsl(60, 100%, 50%);
+}
+.logo span{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.theme{
+    display: flex;
+    align-items: flex-end;
+}
+.theme-text{
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
+    margin-right: 10px;
+}
+.mode{
+    box-sizing: border-box;
+    width: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 0.7rem;
+}
+.mode span{
+    text-align: center;
+}
+.click{
+    box-sizing: border-box;
+    width: 50px;
+    height: 17px;
+    padding: 2px 3px;
+    background: hsl(240, 53%, 15%);
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+}
+.click-second{
+    background: hsl(0, 1%, 67%);
+}
+.click-third{
+    background: hsl(270, 90%, 14%);
+}
+.circle{
+    width: 12px;
+    height: 12px;
+    background: hsl(4, 64%, 49%);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.theme.one .circle{
+    transform: translateX(0%);
+}
+.theme.two .circle{
+    transform: translateX(132%);
+}
+.theme.three .circle{
+    transform: translateX(264%);
+    background: hsl(180, 64%, 49%);
+}
+
+.screen{
+    padding: 1px 10px;
+    background: hsl(240, 53%, 11%);
+    color: #fff;
+    border-radius: 5px;
+}
+.screen-second{
+    background: hsl(0,0%,95%);
+    color: #000;
+}
+.screen-third{
+    background: hsl(270, 90%, 14%);
+    color: hsl(60, 100%, 50%);
+}
+.screen h1{
+    text-align: right;
+    letter-spacing: 1px;
+}
+main{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background: hsl(240, 43%, 25%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.main-second{
+    background: rgb(172, 170,170);
+}
+.main-third{
+    background: hsl(270, 90%, 14%);
+}
+.line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.number, .del{
+    width: 55px;
+    height: 35px;
+    margin: 5px;
+    background: hsl(0, 0%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px 0px #bfbfbf;
+}
+.del{
+    background: hsl(251, 45%, 55%);   
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 2px; 
+    box-shadow: 0px 3px 0px 0px hsl(251, 45%, 45%);
+}
+.reset, .equal{
+    width: 120px;
+    height: 35px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+    letter-spacing: 2px; 
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reset{
+    background: hsl(251, 45%, 55%);
+    text-transform: uppercase;
+    box-shadow: 0px 3px 0px 0px hsl(251, 45%, 45%);
+}
+.equal{
+    background: hsl(4, 64%, 49%);
+    box-shadow: 0px 3px 0px 0px hsl(4, 64%, 39%);
+}
+.del-second, .reset-second{
+    background: hsl(183, 73%, 26%);
+    box-shadow: 0 3px 0 0 hsl(183, 73%, 16%);
+}
+.del-third, .reset-third{
+    background: hsl(290, 80%, 24%);
+    box-shadow: 0 3px 0 0 hsl(290, 80%, 42%);
+}
+.equal-second{
+    background: hsl(10, 64%, 49%);
+    box-shadow: 0 3px 0 0 hsl(10, 64%, 39%);
+}
+.equal-third{
+    background: hsl(180, 64%, 49%);
+    box-shadow: 0 3px 0 0 hsl(180, 64%, 59%);
+    color: #000;
+}
+
+.number:active, .reset:active,.del:active, .equal:active{
+    transform: scale(0.98);
+}
+.number-third{
+    background: hsl(270, 56%, 20%);
+    color: yellow;
+    box-shadow: 0px 3px 0px 0px hsl(300, 90%, 30%);
+}
+@media(max-width:890px){
+    .content{
+        width: 60%;
+        min-width: 450px;
+        height: 60%;
+        gap: 2rem;
+    }
+    .logo span{
+        font-size: 2.2rem;
+    }
+    .mode span{
+        font-size: 1rem;
+    }
+    .theme-text{
+        font-size: 0.85rem;
+    }
+    main{
+        padding: 10px 20px 20px;
+    }
+    .line{
+        justify-content: space-evenly;
+    }
+    .number, .del{
+        height: 70px;
+        width: 70px;
+        margin: 12px 0;
+    }
+    .equal, .reset{
+        height: 70px;
+        width: 185px;
+    }
+
+}
+@media(max-width:430px){
+    .hero{
+        min-height: 100vh;
+        padding-top: 2rem;
+    }
+    .content{
+        width: 90%;
+        height: 100%;
+        min-width: 300px;
+        gap: 2rem;
+    }
+    .logo span{
+        font-size: 2rem;
+    }
+    .mode{
+        width: 50px;
+    }
+    .mode span{
+        font-size: 0.92rem;
+    }   
+    .theme-text{
+        font-size: 0.7rem;
+    }
+    .click{
+        width: 70px;
+        height: 22px;
+        padding: 3px 8px;
+    }  
+    .theme.one .circle{
+        transform: translateX(0%);
+    }
+    .theme.two .circle{
+        transform: translateX(140%);
+    }
+    .theme.three .circle{
+        transform: translateX(280%);
+    }
+    .circle{
+        width: 15px;
+        height: 15px;
+    }
+    .screen{
+        padding: 5px 10px;
+    }
+    .line{
+        justify-content: space-between;
+    }
+    .number, .del{
+        height: 55px;
+        width: 55px;
+        margin: 12px auto;
+        font-size: 1.5rem;
+    }
+    .del{
+        font-size: 1.3rem;
+    }
+    .reset, .equal{
+        width: 134px;
+        height: 55px;
+        margin: 10px auto;
+        font-size: 1.3rem;
+    }   
+    .equal{
+        font-size: 2rem;
+    }
+
+}
+@media(max-width:325px){
+    .hero{
+        padding-top: unset;
+    }
+    main{
+        padding: unset;
+    }
+    .content{
+        height: 95%;
+        gap: 0.7rem;
+    }
+    .screen{
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+    .number, .del{
+        height: 45px;
+        width: 45px;
+        margin: 7px auto;
+    }
+    .del{
+        font-size: 1.1rem;
+    }
+    .equal, .reset{
+        height: 45px;
+        width: 115px;
+    }
+}
